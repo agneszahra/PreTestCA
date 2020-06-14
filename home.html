@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+
+    <title>CyberArmyID | #1 Crowdsourced Cyber Security Platform in Indonesia</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="logo navbar-brand" href="#">
+            <img src="https://www.cyberarmy.id/public/depan/img/logo_ca.png" width="150px">
+        </a>
+
+        <button class="navbar-toggler m-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto">
+                <li class="navbar-item dropdown">
+                    <div class="dropdown dropdownA">
+                        <a href="#" class="nav-link dropdown-toggle-a" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUK</a>
+                        <ul class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Vulnerability Disclosure Program</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Bug Bounty Program</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">CyberArmy Academy</a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#">PROGRAM</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#">PUBLIKASI</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#">TENTANG</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#">MASUK</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="#">DAFTAR</a>
+                </li>
+                <li class="navbar-item dropdown" style="padding: 10px;">
+                    <a class="btn btn-outline-light dropdown-toggle dropdown-toggle-lang nav-link" style="padding: .35rem 1rem;" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/globe.svg" width="17px">
+                        ID
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#" onclick="langId()">Bahasa Indonesia (ID)</a>
+                        <a class="dropdown-item" href="#" onclick="langEn()">English (EN)</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators carousel-indicators-header">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.cyberarmy.id/public/depan/img/Background/header-insiden.jpg" class="d-block height-header-slide w-100" alt="First slide">
+                <div class="carousel-caption caption-insiden text-left">
+                    <h1>TERKENA INSIDEN SIBER SAAT WFH?</h1>
+                    <p>Atasi Bersama CyberArmyID!</p>
+                    <a href="#">
+                        <button type="button" class="btn btn-primary">Lapor!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.cyberarmy.id/public/depan/img/Background/home.svg" class="d-block height-header-slide w-100" alt="second slide">
+                <div class="carousel-caption caption-insiden text-left">
+                    <h1>#1 CROWDSOURCED</h1>
+                    <h1>CYBER SECURITY PLATFORM IN INDONESIA</h1>
+                    <p>Uji Keamanan Aplikasi Bisnis Anda Bersama Bughunter Terbaik di sini.</p>
+                    <a href="#">
+                        <button type="button" class="btn btn-outline-warning">Mulai Sekarang</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="laporinsiden">
+        <button type="button" class="btn btn-secondary">LAPOR INSIDEN SIBER</button>
+    </div>
+
+    <div class="containerklien container-slider">
+        <h3 class="judulklien">KLIEN KAMI</h3>
+        <p class="organisasi">Organisasi dari berbagai industri yang berpartisipasi dalam program ini</p>
+        
+        <div id="amazingcarousel-container-1" class="mb-3">
+            
+            <div id="amazingcarousel-1">
+                <div class="amazingcarousel-list-container">
+                    <div class="amazingcarousel-prev"><img src="https://www.cyberarmy.id/public/depan/js/lightbox-navprev.png"></div>
+                    <ul class="amazingcarousel-list">
+                        <li class="amazingcarousel-item active">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/BPJS.jpg" alt="BPJS" style="max-width: 160px; height: auto; margin: auto;"/>
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item active">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/bhinneka.png" alt="Bhinneka" style="max-width: 150px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item active">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/kemenlu.png" alt="Kementerian Luar Negeri Republik Indonesia" style="max-width: 120px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/kitabisa.png" style="max-width: 130px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <!--
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/bobobox.png" style="max-width: 160px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/dewaweb.jpg" alt="Dewaweb" style="max-width: 140px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/qword.png" style="max-width: 120px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/lumio.png" style="max-width: 140px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/cazh.png" style="max-width: 120px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/indigo.png" style="max-width: 140px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/qualitiva.jpg" style="max-width: 100px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/panenmart.png" style="max-width: 120px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/indoleaks.png" style="max-width: 150px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/Ztoh.png" style="max-width: 120px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/lumintu.png" style="max-width: 120px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/netpurifier.png" style="max-width: 140px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/bandros.png" style="max-width: 140px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/botika.png" style="max-width: 80px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/ctfs.png" style="max-width: 100px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/tiketux.png" style="max-width: 150px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/fasapay.png" style="max-width: 160px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/sertiva.png" style="max-width: 160px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/cilsy.png" style="max-width: 150px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/bp_batam.jpeg" alt="BP Batam" style="max-width: 120px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/lunaz.png" alt="Lunaz" style="max-width: 200px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/gdi.png" alt="Global Data Inspirasi" style="max-width: 140px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                        <li class="amazingcarousel-item">
+                            <div class="card m-3">
+                                <img src="https://www.cyberarmy.id/public/depan/img/klien/rentist.png" alt="PT Rental Spesialis Indonesia" style="max-width: 170px; height: auto; margin: auto;">
+                            </div>
+                        </li>
+                    -->
+                    </ul>
+                    <div class="amazingcarousel-next">
+                        <img src="https://www.cyberarmy.id/public/depan/js/lightbox-navnext.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="katamereka">
+        <h3>KATA MEREKA</h3>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators carousel-indicators-header">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner mb-4">
+                <div class="carousel-item active">
+                    <blockquote>
+                        <div class="row col-10 mx-auto" style="min-height: 250px;">
+                            <div class="col-md-3 col-sm-4 text-center">
+                                <div class="mx-auto mb-3 testi-profile">
+                                    <img src="https://www.cyberarmy.id/public/depan/img/testimoni/testimoni-1.jpg" class="img-testi img-photo" data-pagespeed-url-hash="3287148701" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-8">
+                            <p class="font-italic">"Keberadaan CyberArmy sebagai entitas <b>crowdsourced cybersecurity service</b> merupakan suatu langkah <b>penting bagi ekosistem Cyber Indonesia</b>. Pertama, ini menunjukkan adanya kemampuan dan kiprah industri Cyber Security lokal. Kedua, ini merupakan inovasi dalam mendapatkan <b>layanan Cyber Security yang berkualitas dengan biaya yang tidak memberatkan</b>. Ketiga, ini bisa menjadi contoh pengembangan potensi generasi milenials dalam andil <b>turut menjaga keamanan siber Nasional</b>. Kami <b>beberapa kali sudah bekerjasama</b> dengan mereka dan <b>selalu mendapatkan hasil sesuai yang diharapkan</b>. Semoga layanan CyberArmy terus berkembang dan menjadi lebih baik lagi di masa depan. Terima kasih."</p>
+                            <footer class="blockquote-footer">Anton Setiyawan, S.Si., M.M.<br>
+                                Direktur Proteksi Ekonomi Digital Badan Siber dan Sandi Negara</footer>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+                
+                <div class="carousel-item">
+                    <blockquote>
+                        <div class="row col-10 mx-auto" style="min-height: 250px;">
+                            <div class="col-md-3 col-sm-4 text-center">
+                                <div class="mx-auto mb-3 testi-profile">
+                                    <img src="https://www.cyberarmy.id/public/depan/img/testimoni/testimoni-2.png" class="img-testi" data-pagespeed-url-hash="3581751326" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-8">
+                                <p class="font-italic">"Sebagian besar kasus keamanan siber di Indonesia merupakan kasus peretasan yang menargetkan situs pemerintah. <b>Kami sangat terbantu dengan layanan Cyber Army</b> dengan bug bounty nya dalam rangka <b>memperkuat ketahanan siber di Kementerian Luar Negeri</b>."</p>
+                                <footer class="blockquote-footer">Kepala Bidang KIPD Pusat TIK KP Kemlu</footer>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+    
+                <div class="carousel-item">
+                    <blockquote>
+                        <div class="row col-10 mx-auto" style="min-height: 250px;">
+                            <div class="col-md-3 col-sm-4 text-center">
+                                <div class="mx-auto mb-3 testi-profile">
+                                    <img src="https://www.cyberarmy.id/public/depan/img/testimoni/testimoni-3.jpg" class="img-testi img-photo" data-pagespeed-url-hash="3876148543" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-8">
+                                <p class="font-italic">"Sebagai pemain baru dalam industri crowdsourced cybersecurity, <b>layanan yang diberikan Cyberarmy melebihi ekspektasi kami. Melalui Cyberarmy kami bisa mencegah eksploitasi celah keamanan kritikal yang belum pernah ditemukan oleh 3 penyedia jasa penetration testing sebelumnya</b>."</p>
+                                <footer class="blockquote-footer">Christofer Simbar<br>
+                                    Information Security Analyst BPJS
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            
+                <div class="carousel-item">
+                    <blockquote>
+                        <div class="row col-10 mx-auto" style="min-height: 250px;">
+                            <div class="col-md-3 col-sm-4 text-center">
+                                <div class="mx-auto mb-3 testi-profile">
+                                    <img src="https://www.cyberarmy.id/public/depan/img/testimoni/testimoni-4.jpg" class="img-testi img-photo" data-pagespeed-url-hash="4170648464" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                            </div>
+                            <div class="col-md-9 col-sm-8">
+                                <p class="font-italic">"<b>CyberArmy membantu mengantisipasi celah keamanan yang berisiko besar terhadap kelangsungan bisnis</b>, sehingga <b>kami dapat menghasilkan produk yang lebih aman dan terpercaya</b> untuk pengguna Kitabisa."</p>
+                                <footer class="blockquote-footer">Bherly Novrandy<br>
+                                    VP Engineering Kitabisa.com
+                                </footer>
+                            </div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <svg role="img" viewBox="0 0 256 512" width="17px"><path fill="#bdbdbd" d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"></path></svg>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <svg role="img" viewBox="0 0 256 512" width="17px"><path fill="#bdbdbd" d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"></path></svg>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="produk">
+        <h3>PRODUK</h3>
+        <div class="containerproduk row text-center m-5 hi-icon-wrap hi-icon-effect-8">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-4">
+                <a href="#" class="sub-layanan">
+                <div class="cardproduk p-3 h-100">
+                    <img src="https://www.cyberarmy.id/public/depan/img/400/challenge.png" style="max-height: 100px; margin: 40px auto 20px auto;" data-pagespeed-url-hash="2056092780" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    <h6><b>VULNERABILITY DISCLOSURE PROGRAM</b></h6>
+                    <p>Mengkoordinasikan organisasi dan Bughunter untuk menemukan kerentanan pada suatu sistem secara berkesinambungan.</p>
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-4">
+                <a href="#" class="sub-layanan">
+                <div class="cardproduk p-3 h-100">
+                    <img src="https://www.cyberarmy.id/public/depan/img/400/bug-bounty.png" style="max-height: 100px; margin: 40px auto 20px auto;" data-pagespeed-url-hash="374969777" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    <h6><b>BUG BOUNTY PROGRAM</b></h6>
+                    <p>Memastikan kerentanan ditemukan oleh Bughunter yang beretika dan mengapresiasi hasilnya.</p>
+                </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb-4">
+                <a href="#" class="sub-layanan">
+                <div class="cardproduk p-3 h-100">
+                    <img src="https://www.cyberarmy.id/public/depan/img/400/icon-cda.png" style="max-height: 100px; margin: 40px auto 20px auto;" data-pagespeed-url-hash="4012324421" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    <h6><b>CYBERARMY ACADEMY</b></h6>
+                    <p>Edukasi untuk mengembangkan pengetahuan individu dalam bidang Keamanan Siber dan Informasi.</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="next-gen">
+        <h3>NEXT-GEN SECURITY TESTING</h3>
+        <div class="containernext-gen cardnext-gen card-body mb-5" style="box-shadow: 0px 0px 5px #c7cad1; border-radius: 15px">
+            <div class=" row">
+                <div class="col-md-6 text-center">
+                    <img src="https://www.cyberarmy.id/public/depan/img/400/new versus.jpg" width="80%" data-pagespeed-url-hash="133595942" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-md-6 px-4 pt-3 text-justify text-blueCA">
+                    <p>Aktivitas Penetration testing saat ini belum efektif untuk mengurangi risiko karena perusahaan hanya mempekerjakan sejumlah kecil orang-orang dengan kemampuan yang terbatas dan waktu yang singkat.</p><p>Bug Bounty Program sebagai komplementer dari aktivitas Pentest secara signifikan akan meningkatkan pengurangan risiko dengan model pengujian berbasis apresiasi temuan yang melibatkan ratusan bahkan ribuan Bughunter untuk menguji sistem Anda.</p><p>Selain itu, Bug Bounty Program menawarkan biaya operasional yang terjangkau, dan dapat dijalankan sebagai sebuah program berkelanjutan untuk mendukung aktivitas devops yang selalu memperbarui sistemnya sehingga keamanan merupakan bagian dari sebuah proses pengembangan berkelanjutan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pengujian containerpengujian">
+        <h3>PENGUJIAN KEAMANAN</h3>
+        <p>Dapat dilakukan pada jenis platform seperti berikut</p>
+        <div class="col-10 mx-auto">
+            <div class="row text-center mb-3 mt-0 mx-auto">
+                <div class="col-md m-2 p-2">
+                    <div class="card mx-auto p-3" style="width: 180px; box-shadow: 0px 0px 15px #c7cad1; border-radius: 20px;">
+                    <div class="p-3">
+                        <img src="https://www.cyberarmy.id/public/depan/img/400/web.png" style="max-width: 70px; height: auto; margin: auto;" data-pagespeed-url-hash="3034747177" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    </div>
+                    <p class="text-blueCA mb-0" style="font-weight: 800">Aplikasi Web</p>
+                    </div>
+                </div>
+                <div class="col-md m-2 p-2">
+                    <div class="card mx-auto p-3" style="width: 180px; box-shadow: 0px 0px 15px #c7cad1; border-radius: 20px;">
+                    <div class="p-3">
+                        <img src="https://www.cyberarmy.id/public/depan/img/400/android.png" style="max-width: 70px; height: auto; margin: auto;" data-pagespeed-url-hash="3024009356" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    </div>
+                    <p class="text-blueCA mb-0" style="font-weight: 800">Android</p>
+                    </div>
+                </div>
+                <div class="col-md m-2 p-2">
+                    <div class="card mx-auto p-3" style="width: 180px; box-shadow: 0px 0px 15px #c7cad1; border-radius: 20px;">
+                    <div class="p-3">
+                        <img src="https://www.cyberarmy.id/public/depan/img/400/ios.png" style="max-width: 70px; height: auto; margin: auto;" data-pagespeed-url-hash="3501332778" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    </div>
+                    <p class="text-blueCA mb-0" style="font-weight: 800">iOS</p>
+                    </div>
+                </div>
+                <div class="col-md m-2 p-2">
+                    <div class="card mx-auto p-3" style="width: 180px; box-shadow: 0px 0px 15px #c7cad1; border-radius: 20px;">
+                    <div>
+                        <img src="https://www.cyberarmy.id/public/depan/img/400/api.png" style="max-width: 102px; height: auto; margin: auto;" data-pagespeed-url-hash="1998087851" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    </div>
+                    <p class="text-blueCA mb-0" style="font-weight: 800">API</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-10 mx-auto">
+            <div class="row text-center my-5 mx-3">
+            <div class="col-md hitung">
+                <span class='numscroller text-orenCA' style="font-size: 6.5vh" data-min='1' data-max='1949' data-delay='5' data-increment='3'>1949</span>
+                <p class="text-blueCA">Bughunter</p>
+            </div>
+            <div class="col-md hitung">
+                <span class='numscroller text-orenCA' style="font-size: 6.5vh" data-min='1' data-max='931' data-delay='5' data-increment='7'>931</span>
+                <p class="text-blueCA">Kerentanan</p>
+            </div>
+            <div class="col-md hitung">
+                <span class='numscroller text-orenCA' style="font-size: 6.5vh" data-min='1' data-max='100' data-delay='5' data-increment='3'>70</span><span class="count-plus text-orenCA " style="font-size: 6.5vh">+</span>
+                <p class="text-blueCA">Aplikasi</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portofolio" style="background-color: #f9f9f9;">
+        <h3 class="text-center my-5" style="color: var(--blue);">PORTOFOLIO BUGHUNTER KAMI</h3>
+        <div class="row mb-2">
+        <div class="col-10 mx-auto">
+            <div class="row text-center mx-auto">
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-3">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/google.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="2816129549" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-3">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/RSAsecurity.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="4201161218" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-3">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/master-card.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="1583075945" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/apple.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="1612092672" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-3">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/trend-micro.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="1918134658" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/adobe.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="1064568357" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/samsung.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="2574130232" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/npm.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="3534733369" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/symantec.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="4276988398" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/sony.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="2271919823" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/paypal.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="1810256143" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/asus.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="1817802668" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+            </div>
+            <button id="btn-portfolio" class="mb-5 mt-4 btn btn-outline-warning text-blueCA float-right">Show more..</button>
+            <div id="portfolio-more" class="row text-center mb-5 mx-auto" style="display: none">
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/algolia.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="1468443103" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/booking.com.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="2845829158" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/boredpanda.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="992524550" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/BuzzFeed.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="117262433" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/directly.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="214320446" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/discourse.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="8542999" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/dropbox.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="752299966" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/flickr.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="3528543947" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/ford.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="4105254759" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/groupon.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="3901560740" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/imgur.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="604041326" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/infogram.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="139674453" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/informatica.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="2254960197" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/invision.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="3231519805" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/jet.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="2887126811" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/lenovo.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="2168609047" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/mcafee.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="1429344827" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/monster.com.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="4190395123" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/motorola.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="2136547687" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/oath.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="2193613334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/ok-ru1.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="614038709" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/razer.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="500448382" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/rockstar-games.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="3071368655" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/send-grid.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="1039531637" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/soundcloud.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="2224213158" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/stackpath.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="3638616287" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/ubnt.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="4049585483" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 mt-4">
+                    <img src="https://www.cyberarmy.id/public/depan/img/portofolio/vk.png" style="width: 90%; height: 100px; object-fit: contain;" data-pagespeed-url-hash="1090858601" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <table style="margin-left: 70px; width: 1000px; padding-bottom: 5px;">
+            <thead>
+              <tr>
+                <th style="width: 233px; color: white;" scope="col">CYBER ARMY INDONESIA</th>
+                <th style="width: 233px; color: white;" scope="col">LAYANAN PERUSAHAAN</th>
+                <th style="width: 233px; color: white;" scope="col">LAYANAN BUGHUNTER</th>
+                <th style="width: 233px; color: white;" scope="col">LAINNYA</th>
+                <th style="width: 233px; color: white;" scope="col">MEDIA SOSIAL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    <a class="isitabel" href="https://www.cyberarmy.id/tentang" class="nounderline">Tentang Kami</a><br>
+                    <a class="isitabel" href="https://www.cyberarmy.id/publication" class="nounderline">Publikasi</a><br>
+                    <a class="isitabel" href="https://www.cyberarmy.id#mitra" class="nounderline">Mitra Kami</a><br>
+                    <a class="isitabel" href="https://www.cyberarmy.id/tentang#kontak" class="nounderline">Kontak</a><br>
+                    <a class="isitabel" href="https://www.cyberarmy.id/karir" class="nounderline">Karir</a>
+                </td>
+                <td>
+                    <a class="isitabel" href="https://www.cyberarmy.id/layanan/vdp" class="nounderline">Vulnerability Disclosure Program</a><br>
+                    <a class="isitabel" href="https://www.cyberarmy.id/layanan/company#managedByCyberarmy" class="nounderline">Bug Bounty Program</a><br>
+                    <a class="isitabel" href="https://www.cyberarmy.id/layanan/cda" class="nounderline">CyberArmy Academy</a>
+                </td>
+                <td>
+                    <a class="isitabel" href="https://www.cyberarmy.id/layanan/bughunter" class="nounderline">Challenge Program</a><br>
+                    <a class="isitabel" href="https://www.cyberarmy.id/programs" class="nounderline">Program List</a><br>
+                    <a class="isitabel" href="https://www.cyberarmy.id/leaderboard" class="nounderline">Leaderboard</a>
+                </td>
+                <td>
+                    <a class="isitabel" href="https://www.cyberarmy.id/faq" class="nounderline">FAQ</a><br>
+                    <a class="isitabel" href="https://www.cyberarmy.id/s&amp;k" class="nounderline">Syarat &amp; Ketentuan</a><br>
+                    <a class="isitabel" href="https://www.cyberarmy.id/kebijakan-pr" class="nounderline">Kebijakan Privasi</a>
+                </td>
+                <td>
+                    <a href="https://twitter.com/cyberarmyid" class="socialmedia">
+                        <svg aria-hidden="true" role="img" viewBox="0 0 448 512" width="25px"><path fill="#fff" d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/cyberarmyid/" class="socialmedia">
+                        <svg aria-hidden="true" role="img" viewBox="0 0 448 512" width="25px"><path fill="#fff" d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/company/cyberarmyid/" class="socialmedia">
+                        <svg aria-hidden="true" role="img" viewBox="0 0 448 512" width="25px"><path fill="#fff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/cyberarmyid/?hl=en" class="socialmedia">
+                        <svg aria-hidden="true" role="img" viewBox="0 0 448 512" width="25px"><path fill="#fff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC5AsT2VNN8ExOz7FpNNzhUg" class="socialmedia">
+                        <svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="25px"><path fill="#fff" d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z" class=""></path></svg>
+                    </a>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+        <div class="text-center copyright-footer" style="margin-top: 15px;"> &copy; 2020 PT Global Inovasi Siber Indonesia - All Rights Reserved</div>
+    </footer>
+
+
+
+
+
+
+
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
